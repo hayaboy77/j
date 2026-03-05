@@ -1,0 +1,21 @@
+name: Hello World when push
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: Hello World 출력하기
+        run: |
+          echo "========================================="
+          echo "안녕하세요! GitHub Actions가 동작했습니다 🎉"
+          echo "현재 시간: $(date)"
+          echo "커밋 메시지: $GITHUB_SHA"
+          echo "========================================="
