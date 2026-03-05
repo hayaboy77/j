@@ -2,7 +2,7 @@
 class Test{     
 
    public static void main(String args []){
-       System.out.print("hi5");       
+       System.out.print("hi6");       
 
     }
 }
